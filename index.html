@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop Files</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .drag-here {
+        width: 500px;
+        height: 400px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: #777;
+        font-size: 30px;
+        font-weight: bold;
+        transition: all 0.3s ease-in;
+        border: 3px dashed #ccc;
+        flex-wrap: wrap;
+      }
+      .drag-hover {
+        background: #3581f325;
+        color: #3581f3;
+        border-color: #3581f3;
+      }
+      .img-dropped {
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+        margin: 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="drag-here"
+      ondragover="_onDragOver(event, this);"
+      ondragleave="_onDragLeave(event, this)"
+      ondrop="_onDrop(event)"
+      dropzone="copy"
+      id="dnd"
+    >
+      Drag your files here...
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
