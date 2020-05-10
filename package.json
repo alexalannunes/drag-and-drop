@@ -1,0 +1,14 @@
+{
+  "name": "drag-and-drop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "php -S localhost:4040 -t server"
+  },
+  "repository": "https://github.com/alexalannunes/drag-and-drop.git",
+  "author": "Alex Alan Nunes <alexalannunes@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
